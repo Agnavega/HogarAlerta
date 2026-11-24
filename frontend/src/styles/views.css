@@ -1,0 +1,34 @@
+[hidden]{display:none!important}
+.brand{font-size:22px;letter-spacing:-1px;white-space:nowrap}.brand-icon{flex-shrink:0;width:34px;height:36px;margin-right:8px}.brand-dot{display:none}
+.sensor-details{display:none;margin-top:24px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}th{font-weight:600;color:#60776f;background:#f6f9f7}th,td{padding:16px;border-bottom:1px solid #e7eeea;white-space:nowrap}.threshold-note{font-size:14px;line-height:1.7;color:#7b8e85}
+body[data-view=overview] #events .event:nth-child(n+5){display:none}
+body[data-view=sensors] .activity-panel{display:none}
+body[data-view=sensors] .hero,body[data-view=activity] .hero{display:none}
+body[data-view=overview] .chart-panel{display:none}
+body[data-view=overview] .bottom-grid{grid-template-columns:1fr}
+body[data-view=overview] .activity-panel .simulation{display:none}
+body[data-view=overview] .activity-panel #events{display:flex;gap:28px;flex-wrap:wrap}
+body[data-view=sensors] .bottom-grid{grid-template-columns:1fr}
+body[data-view=sensors] .sensor-details{display:block}
+body[data-view=sensors] .chart-wrap{height:240px}
+body[data-view=activity] #sensors,body[data-view=activity] .chart-panel{display:none}
+body[data-view=activity] .bottom-grid{grid-template-columns:1fr}
+body[data-view=activity] .activity-panel{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:32px}
+body[data-view=activity] .activity-panel>.section-heading{grid-column:1/-1}
+body[data-view=activity] #events{display:block;max-height:600px;overflow-y:auto;padding-right:15px}
+body[data-view=activity] .simulation{align-self:start;margin:0;border:1px solid #e4ece7;border-radius:12px;padding:20px;background:#f8fbf9}
+body[data-view=activity] .event{padding-bottom:15px;border-bottom:1px solid #edf1ee}
+@media(max-width:760px){body[data-view=activity] .activity-panel{display:block}body[data-view=activity] .simulation{margin-top:25px}.brand{font-size:24px}th,td{padding:13px}body[data-view=sensors] .chart-wrap{height:180px}}
+.login-panel{width:min(440px,calc(100% - 32px));margin:12vh auto;padding:28px}
+.login-panel h1,.users-panel h2{margin-top:0}
+.login-panel form,.users-panel form{display:grid;gap:16px;max-width:420px}
+.login-panel label,.users-panel label{display:grid;gap:6px;font-weight:600}
+.login-panel input,.users-panel input{width:100%;padding:10px 12px;border:1px solid #b6c9c0;border-radius:8px;font:inherit}
+.login-panel button,.users-panel button{justify-self:start}
+.users-panel small{font-weight:400}
+.profile{overflow-wrap:anywhere}
+body[data-view=users] .hero,body[data-view=users] #sensors,body[data-view=users] .bottom-grid,body[data-view=users] #refresh{display:none}
+.login-panel .secondary,.users-panel .secondary,#logout{font-size:14px;margin-top:0}
+body[data-view=users] #data-message{display:none}
+@media(max-width:760px){nav{flex-wrap:wrap}.header-right{flex-wrap:wrap;justify-content:flex-end}.header-right .demo-badge{display:none}}
+body[data-view=overview] #data-message{display:none}
